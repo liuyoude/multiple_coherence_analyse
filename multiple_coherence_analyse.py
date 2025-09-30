@@ -145,7 +145,8 @@ if __name__ == "__main__":
     print("Delays (in samples):", Dnv)
 
     plt.figure()
-    plt.plot(f_range, Cnv_range)
+    plt.plot(f_range, Cnv_range, label=f'50-500Hz @ {Cnv_avg:.2f}')
+    plt.legend(loc='upper right')
     plt.xlabel("Frequency (Hz)")
     plt.ylabel("Coherence")
     plt.title("Multiple Coherence between Noise and Vibration Signals")

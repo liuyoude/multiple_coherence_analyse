@@ -19,3 +19,4 @@ signals = np.vstack([noise1, noise2, vibra1, vibra2, vibra3])
 f_range, Cnv_range, Cnv_avg, Dnv = multiple_coherence_analyse(signals, noise_channels=[0, 1], vibra_channels=[2, 3, 4],
                                                                 sr=sr, n_fft=1024, max_delay_ms=10, low_freq=50, high_freq=500)
 ```
+![correlation.png](correlation.png)
